@@ -3,7 +3,7 @@ def concentration(x, y, z, t,
                   m_dot, Ux, Uy, Um, DT, h):
 
     # 相对风速
-    U_rel =  - Ux 
+    U_rel =  - Ux + Um
 
     # Galilean transform 后的下游距离 x' = x - Um*t
     x_rel = x - Um * t
